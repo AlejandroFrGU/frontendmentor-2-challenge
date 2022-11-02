@@ -22,6 +22,7 @@ body{
     font-family: var(--font-family-1);
     display: grid;
     place-items: center;
+    height: 100vh;
     padding: 1rem;
 }
 p{
@@ -39,7 +40,8 @@ footer{
 }
 .nft{
     background-color: var(--color-neutral-2);
-    max-width: 240px;
+    min-width: 200px;
+    max-width: 400px;
     padding: 1rem;
     border-radius: .5rem;
 }
@@ -78,17 +80,20 @@ footer{
 .nft__image:hover > .nft__image-overlay {
     opacity: .4;
 }
-.nft__content > div,
-.nft__content > p {
-    padding: .5rem 0;
-}
+/* .nft__content > div,
+.nft__content > p,
+.nft__content > h2 {
+    padding: 1rem 0 0;
+} */
 .nft__content-title a{
-    padding: .5rem 0 0;
+    display: block;
+    padding: 1rem 0 0;
     color: var(--color-neutral-4);
-    font-size: 1rem;
+    font-size: 2rem;
 }
 .nft__content-description{
-    font-size: .7rem;
+    padding: 1rem 0 0;
+    font-size: 1rem;
     font-weight: var(--font-weight-regular);
     color: var(--color-primary-1);
     max-height: 15ch;
@@ -103,29 +108,29 @@ footer{
 } */
 .nft__content-extra{
     display: grid;
+    padding: 1rem 0 1rem;
     grid-template-columns: 1fr 1fr;
 }
 .nft__content-extra-2{
     text-align: end;
 }
 .nft__content-extra-1 > img{
-    width: .5rem;
-    vertical-align: middle;
+    width: .8rem;
+    vertical-align: bottom;
 }
 .nft__content-extra-2 > img {
-    width: .7rem;
-    vertical-align:middle;
+    width: 1.2rem;
+    vertical-align:bottom;
 }
 .nft__content-extra-1 > span{
-    font-size: .7rem;
     color: var(--color-primary-2);
     font-weight: var(--font-weight-lighter);
 }
 .nft__content-extra-2 > span{
-    font-size: .6rem;
     color: var(--color-primary-1);
 }
 .nft__content-creator{
+    padding: 1rem 0;
     border-top: 1px solid var(--color-neutral-3);
     display: grid;
     grid-template-columns: minmax(20px,10%) 90%;
@@ -138,8 +143,7 @@ footer{
     cursor: pointer;
 }
 .nft__content-creator > span {
-    padding-left: .3rem;
-    font-size: .7rem;
+    padding-left: 1rem;
     align-self: center;
     color: var(--color-primary-1);
     font-weight: var(--font-weight-light);
